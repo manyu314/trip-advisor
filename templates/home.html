@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<br>
+<div class ='container'>
+<div class="p-3 mb-2 bg-light text-dark ">
+<h1 align='center'>Sentiment Analysis of Hotel Reviews</h1>
+<hr>
+<h4>Enter the Review:</h4>
+
+<form action = '/predict' method="POST">
+
+	<div class="form-floating">
+	<textarea id='review' class="form-control" name='review' style="height: 100px"></textarea>
+	<br>
+</div>
+
+	<input type='submit' class="btn btn-primary" value='Check'>
+
+</form>
+
+{% endblock %}
